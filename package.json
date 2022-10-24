@@ -1,0 +1,23 @@
+{
+  "name": "projet-3",
+  "version": "1.0.0",
+  "description": "Projet N°3: Oh My Food",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/main.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredge2/Projet_3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredge2/Projet_3/issues"
+  },
+  "homepage": "https://github.com/fredge2/Projet_3#readme",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
