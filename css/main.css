@@ -1,5 +1,17 @@
 body {
   padding: 20px;
 }
+.logo {
+  font-family: Shrikhand;
+  font-size: 20px;
+  text-align: center;
+}
+
+.texte {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border: 2px solid violet;
+}
 
 /*# sourceMappingURL=main.css.map */
