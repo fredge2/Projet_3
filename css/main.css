@@ -7,6 +7,22 @@ body {
   text-align: center;
 }
 
+.location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-family: Roboto;
+  height: 60px;
+  background-color: #e7e9eb;
+}
+
+.location span {
+  margin: 40px;
+}
+
+/**essai*/
+
 .texte {
   width: 100px;
   height: 100px;
