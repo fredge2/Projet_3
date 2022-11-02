@@ -1,10 +1,13 @@
 body {
   padding: 20px;
+  margin: 0 auto;
+  font-family: Roboto;
 }
 .logo {
   font-family: Shrikhand;
   font-size: 20px;
   text-align: center;
+  width: 100%;
 }
 
 .location {
@@ -21,13 +24,121 @@ body {
   margin: 40px;
 }
 
-/**essai*/
-
-.texte {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  border: 2px solid violet;
+.intro {
+  display: block;
+  text-align: center;
+  height: 300px;
+  background-color: #f6f6f6;
+  align-items: center;
+  font-size: 25px;
+  padding-bottom: 30px;
+  padding-top: 40px;
+  line-height: 70%;
 }
+
+.intro p {
+  font-size: 20px;
+}
+
+.button {
+  width: 260px;
+  min-height: 60px;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #ff79da;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  box-shadow: 0px 8px 10px -5px grey;
+}
+.button span {
+  margin: auto;
+}
+
+.fonctionnement {
+  height: 60px;
+  background-color: white;
+}
+.ftittle {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 60px;
+  padding-bottom: 40px;
+  margin-top: 80px;
+}
+
+.wrap_box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin: 20px;
+}
+
+.wrap {
+  height: 60px;
+  width: 300px;
+  border: solid 2px;
+  border-radius: 15px;
+  background-color: #f6f6f6;
+  text-align: center;
+  border-radius: 21px;
+  box-shadow: 0px 8px 10px -5px grey;
+}
+
+.wrap:hover {
+  background-color: #ff79da;
+}
+
+.wrap:visited {
+  background-color: #ff79da;
+}
+
+/**restaurants*/
+
+.greywrapper {
+  background-color: #f6f6f6;
+  margin-top: 30px;
+  padding-bottom: 60px;
+}
+
+.Card_container {
+  background-color: #f6f6f6;
+  margin-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tittle_wrapper {
+  margin: 40px;
+  margin-left: 60px;
+  padding: 40px;
+}
+
+.card {
+  height: 300px;
+  width: 300px;
+}
+
+.card_image {
+  width: 20%;
+  height: 260px;
+  overflow: hidden;
+  object-fit: cover;
+}
+/**Mise en page résultats de recherche*/
+
+.Card_container {
+  width: 100vw;
+}
+
+.card_image {
+  width: 80%;
+}
+
+/**essai*/
 
 /*# sourceMappingURL=main.css.map */
