@@ -1,0 +1,195 @@
+<!--La palette du gout-->
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="CSS/main.css" />
+    <title>Ohmyfood</title>
+
+    <!--polices-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/dbf35b23bd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+
+
+
+
+<header>
+  <div id="ancre_page1"></div>
+  <div class="button_retour"></div>
+  <div class="logo">
+    <h1>Ohmyfood</h1>
+  </div>
+</header>
+<img
+  src="Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+  alt="La_palette_du_goût"
+/>
+
+<section>
+  <div class="greywrapper">
+    <div class="greywrappertittle">
+      <p>La palette du goût</p>
+      <div class="coeur"></div>
+    </div>
+
+    <div class="entrees">
+      <p>Entrées</p>
+
+      <div class="wrapper">
+        <div class="wrapper_text">
+          <p>
+            <b>Fricassée d'escargots</b></br>
+            <span>Au piment d'espelette</span>
+            <span><b>25 €</b></span>
+          </p>
+        </div>
+        <div class="wrapper_button"></div>
+      </div>
+
+      <div class="wrapper">
+        <div class="wrapper_text">
+          <p>
+            <b>Foie gras de canard mi-cuit</b></br>
+            <span>Et ses copeaux de truffe noire</span>
+            <span><b>35 €</b></span>
+          </p>
+        </div>
+        <div class="wrapper_button"></div>
+      </div>
+
+      <div class="wrapper">
+        <div class="wrapper_text">
+          <p>
+            <b>Œuf au plat</b></br>
+            <span>Assaisonné à la truffe sur lit de caviar</span>
+            <span><b>20 €</b></span>
+          </p>
+        </div>
+        <div class="wrapper_button"></div>
+      </div>
+    </div>
+
+    <div class="plats">
+      <p>Plats</p>
+
+      <div class="wrapper">
+        <div class="wrapper_text">
+          <p>
+            <b>Filet de boeuf aux herbes</b></br>
+            <span>Accompagné de sa ribambelle de légumes</span>
+            <span><b>40 €</b></span>
+          </p>
+        </div>
+        <div class="wrapper_button"></div>
+      </div>
+
+      <div class="wrapper">
+        <div class="wrapper_text">
+          <p>
+            <b>Parmentier de queue de boeuf</b></br>
+            <span>À la truffe noire sur sa purée de panais</span>
+            <span><b>35 €</b></span>
+          </p>
+        </div>
+        <div class="wrapper_button"></div>
+      </div>
+
+      <div class="wrapper">
+        <div class="wrapper_text">
+          <p>
+            <b>Filet de turbot</b></br>
+            <span>Aux agrumes</span>
+            <span><b>44 €</b></span>
+          </p>
+        </div>
+        <div class="wrapper_button"></div>
+      </div>
+    </div>
+
+    <div class="desserts">
+      <p>Desserts</p>
+
+      <div class="wrapper">
+        <div class="wrapper_text">
+          <p>
+            <b>Paris-Brest</b></br>
+            <span>Revisité</span>
+            <span><b>18 €</b></span>
+          </p>
+        </div>
+        <div class="wrapper_button"></div>
+      </div>
+
+      <div class="wrapper">
+        <div class="wrapper_text">
+          <p>
+            <b>Macaron au chocolat d'exception</b></br>
+            <span>Et glace à la vanille de Madagascar</span>
+            <span><b>22 €</b></span>
+          </p>
+        </div>
+        <div class="wrapper_button"></div>
+      </div>
+
+      <div class="wrapper">
+        <div class="wrapper_text">
+          <p>
+            <b>Mousse au chocolat</b></br>
+            <span>Au piment d'Espelette et à la truffe noire</span>
+            <span><b>23 €</b></span>
+          </p>
+        </div>
+        <div class="wrapper_button"></div>
+      </div>
+    </div>
+
+    <div class="button">
+      <span>commander</span>
+    </div>
+  </div>
+</section>
+<!--footer-->
+<footer>
+  <div class="footer_container">
+    <div class="logo_footer"></div>
+    <div class="box">
+      <i class="fa-solid fa-utensils"></i>
+      <span>Proposer un restaurant</span>
+    </div>
+
+    <div class="box">
+      <i class="fa-solid fa-handshake"></i>
+      <span>Devenir partenaire</span>
+    </div>
+
+    <div class="box">
+      <i></i>
+      <span>Mentions légales</span>
+    </div>
+
+    <div class="box">
+      <i></i>
+      <a href="mailto:Ohmyfood@gmail.com">Contact</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
