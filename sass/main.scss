@@ -1,5 +1,4 @@
 body {
-  padding: 20px;
   margin: 0 auto;
   font-family: Roboto;
   margin: 0 auto;
@@ -103,7 +102,7 @@ body {
 .wrap_pastille {
   border: solid 1px;
   border-radius: 100px;
-  background-color: #9356dc;
+  background-color: blue;
   color: #e7e9eb;
   height: 22px;
   width: 22px;
@@ -148,7 +147,7 @@ body {
   margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .tittle_wrapper {
@@ -163,10 +162,14 @@ body {
   background-color: white;
   font-size: 18px;
   border-radius: 40px 40px 0px 0px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .card_texte {
   display: flex;
+  text-decoration: none;
+  color: black;
 }
 
 .card_image {
@@ -201,7 +204,7 @@ body {
   padding: 20px;
 }
 
-.logo_footer {
+#logo_footer {
   font-family: Shrikland;
   padding-left: 20px;
 }
