@@ -35,13 +35,17 @@ body {
 .intro {
   display: block;
   text-align: center;
-  height: 300px;
+  height: 370px;
   background-color: #f6f6f6;
   align-items: center;
   font-size: 25px;
   padding-bottom: 30px;
   padding-top: 40px;
   line-height: 70%;
+}
+
+.intro h1 {
+  line-height: 1.2;
 }
 
 .intro p {
@@ -70,6 +74,7 @@ body {
 .fonctionnement {
   height: 60px;
   background-color: white;
+  margin: 10px;
 }
 
 .ftittle {
@@ -86,6 +91,7 @@ body {
   justify-content: space-evenly;
   margin-top: 20px;
   margin: 20px;
+  padding: 10px;
 }
 
 .wrap {
@@ -100,12 +106,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: start;
+  margin: 5px;
 }
 
 .wrap_pastille {
   border: solid 1px;
   border-radius: 100px;
-  background-color: blue;
+  background-color: #9356dc;
   color: #e7e9eb;
   height: 22px;
   width: 22px;
@@ -143,6 +150,7 @@ body {
   background-color: #f6f6f6;
   margin-top: 30px;
   padding-bottom: 60px;
+  width: 100vw;
 }
 
 .Card_container {
@@ -167,6 +175,8 @@ body {
   border-radius: 40px 40px 0px 0px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .card_texte {
@@ -182,8 +192,7 @@ body {
 
 .coeur {
   padding-top: 25px;
-  padding-left: 50px;
-  flex: 1.5%;
+  font-size: 25px;
 }
 
 /**Mise en page résultats de recherche*/
@@ -200,14 +209,17 @@ body {
   background-color: #353535;
   color: white;
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex: wrap;
 }
 
 .box {
   padding: 20px;
 }
 
-#logo_footer {
-  font-family: Shrikland;
+.logo_footer {
+  font-family: Shrikhand;
   padding-left: 20px;
 }
 
