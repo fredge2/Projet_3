@@ -1,3 +1,5 @@
+/**CSS restaurants*/
+
 .entete {
   display: flex;
   flex: wrap;
@@ -11,7 +13,7 @@
   padding-right: 40px;
   font-size: 30px;
   position: absolute;
-  bottom: 35px;
+  bottom: 30px;
   left: 40px;
 }
 .img {
@@ -33,11 +35,12 @@
 .greywrappertittle i {
   padding-left: 30px;
 }
-.entrees {
+.itemmenu {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 
 .wrapper {
@@ -50,7 +53,74 @@
   box-shadow: 0px 8px 10px -5px grey;
   border-radius: 20px;
   text-align: start;
+  display: flex;
+  justify-content: space-between;
 }
 .wrapper_text {
   padding-left: 20px;
+}
+.wrapper_button {
+  background-color: #99e2d0;
+  width: 15%;
+  height: auto;
+  justify-self: right;
+}
+.wrapper_button {
+  color: white;
+  font-size: 20px;
+}
+.wrapper_2 {
+  text-align: left;
+  width: 400px;
+  font-size: 30px;
+  text-decoration: underline green;
+}
+
+.button {
+  width: 260px;
+  min-height: 60px;
+  border-radius: 50px 50px 50px 50px;
+  background-color: #ff79da;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  box-shadow: 0px 8px 10px -5px grey;
+  font-size: 20px;
+}
+
+.button span {
+  margin: auto;
+  font-size: 20px;
+}
+
+/**footer*/
+footer {
+  margin-top: 20px;
+}
+
+.footer_container {
+  background-color: #353535;
+  color: white;
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex: wrap;
+}
+
+.box {
+  padding: 20px;
+}
+
+.logo_footer span {
+  font-family: Shrikland;
+  padding-left: 20px;
+}
+
+#contact {
+  text-decoration: none;
+  color: white;
 }
