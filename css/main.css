@@ -1,5 +1,5 @@
-@charset "UTF-8";
 body {
+  padding: 20px;
   margin: 0 auto;
   font-family: Roboto;
   margin: 0 auto;
@@ -35,17 +35,13 @@ body {
 .intro {
   display: block;
   text-align: center;
-  height: 370px;
+  height: 300px;
   background-color: #f6f6f6;
   align-items: center;
   font-size: 25px;
   padding-bottom: 30px;
   padding-top: 40px;
   line-height: 70%;
-}
-
-.intro h1 {
-  line-height: 1.2;
 }
 
 .intro p {
@@ -66,7 +62,6 @@ body {
   margin-top: 25px;
   box-shadow: 0px 8px 10px -5px grey;
 }
-
 .button span {
   margin: auto;
 }
@@ -74,9 +69,7 @@ body {
 .fonctionnement {
   height: 60px;
   background-color: white;
-  margin: 10px;
 }
-
 .ftittle {
   font-size: 24px;
   font-weight: bold;
@@ -91,7 +84,6 @@ body {
   justify-content: space-evenly;
   margin-top: 20px;
   margin: 20px;
-  padding: 10px;
 }
 
 .wrap {
@@ -106,7 +98,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: start;
-  margin: 5px;
 }
 
 .wrap_pastille {
@@ -144,13 +135,12 @@ body {
 .wrap i {
   padding-left: 15px;
 }
-
 /**restaurants*/
+
 .greywrapper {
   background-color: #f6f6f6;
   margin-top: 30px;
   padding-bottom: 60px;
-  width: 100vw;
 }
 
 .Card_container {
@@ -158,7 +148,7 @@ body {
   margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .tittle_wrapper {
@@ -173,16 +163,13 @@ body {
   background-color: white;
   font-size: 18px;
   border-radius: 40px 40px 0px 0px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 .card_texte {
   display: flex;
   text-decoration: none;
-  color: black;
 }
 
 .card_image {
@@ -190,12 +177,17 @@ body {
   object-fit: cover;
 }
 
-.coeur {
-  padding-top: 25px;
-  font-size: 25px;
+.texte {
+  text-decoration: none;
 }
 
+.coeur {
+  padding-top: 25px;
+  padding-left: 50px;
+  flex: 1.5%;
+}
 /**Mise en page résultats de recherche*/
+
 .Card_container {
   width: 100vw;
 }
@@ -205,6 +197,7 @@ body {
 }
 
 /**footer*/
+
 .footer_container {
   background-color: #353535;
   color: white;
@@ -227,7 +220,4 @@ body {
   text-decoration: none;
   color: white;
 }
-
-/*# sourceMappingURL=main.css.map */
-
 /*# sourceMappingURL=main.css.map */
