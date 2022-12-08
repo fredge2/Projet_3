@@ -19,17 +19,26 @@
 
 .logo {
   font-size: 28px;
+  color: green;
 }
+
 .img {
-  width: 50px;
-  height: 50px;
+  position: relative;
+  width: 97vw;
+  height: 6 00px;
+  object-fit: cover;
 }
 
 .greywrapper {
+  position: relative;
+  z-index: 1;
   background-color: #f6f6f6;
   text-align: center;
   display: flex;
   flex-direction: column;
+  border: 1px hidden;
+  border-radius: 38px 38px 0px 0px;
+  margin-top: -100px;
 }
 .greywrappertittle {
   font-family: Shrikhand;
@@ -51,8 +60,7 @@
   background-color: white;
   width: 400px;
   margin: auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
+
   margin: 15px;
   box-shadow: 0px 8px 10px -5px grey;
   border-radius: 20px;
@@ -60,14 +68,22 @@
   display: flex;
   justify-content: space-between;
 }
+
+.wrapper_text_tittle {
+  width: 40px;
+  border-bottom: 4px solid green;
+}
+
 .wrapper_text {
   padding-left: 20px;
 }
 .wrapper_button {
+  visibility: hidden;
   background-color: #99e2d0;
   width: 15%;
   display: grid;
   place-items: center;
+  padding: unset;
 }
 .circlecheck {
   width: 30px;
@@ -81,7 +97,7 @@
   text-align: left;
   width: 400px;
   font-size: 30px;
-  text-decoration: underline green;
+  padding-bottom: 20px;
 }
 
 .button {
