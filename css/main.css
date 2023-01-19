@@ -1,9 +1,77 @@
+/**loader*/
+
 body {
-  padding: 20px;
-  margin: 0 auto;
+  padding: 0px;
+  margin: 0px;
   font-family: Roboto;
-  margin: 0 auto;
 }
+
+@keyframes overlay {
+  0% {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  90% {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  100% {
+    height: 0px;
+  }
+}
+
+#overlay {
+  animation: 1s overlay;
+  overflow: hidden;
+  z-index: 1000;
+  background-color: #32b091;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+/**essai couleur*/
+
+.cercle1 {
+  margin-top: 50px;
+  background-color: #15dea5;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-top: #9356dc 10px solid;
+  border-bottom: #f00f0f 10px solid;
+  border-radius: 50%;
+  animation: spin 3s linear 5s;
+
+  animation-fill-mode: forwards;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    height: 0px;
+    width: 0px;
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.cercle2 {
+  border-bottom: #00f0f0 solid 10px;
+  border-top: rgb(255, 47, 175) solid 10px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: auto;
+  animation: spin 3s linear 5s;
+}
+
+/**Main*/
 
 .img {
   width: 260px;
@@ -159,7 +227,7 @@ body {
 }
 
 .card {
-  height: 280px;
+  height: 270px;
   width: 260px;
   background-color: white;
   font-size: 18px;
@@ -168,9 +236,30 @@ body {
   color: black;
 }
 
+.card_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "roboto", sans-serif;
+  text-align: center;
+  width: 80px;
+  height: 30px;
+  background-color: #99e2d0;
+  color: #32b091;
+  position: relative;
+  left: 65%;
+  top: -165px;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+
 .card_texte {
   display: flex;
   text-decoration: none;
+  padding-left: 10px;
 }
 
 .card_image {
@@ -180,13 +269,37 @@ body {
 
 .texte {
   text-decoration: none;
+  width: 80%;
+}
+
+.coeuri {
+  padding-top: 25px;
+  padding-left: 10px;
+  width: 20%;
+  flex: 1.7%;
 }
 
 .coeur {
-  padding-top: 25px;
-  padding-left: 50px;
-  flex: 1.5%;
+  display: flex;
+  color: transparent;
+  background-color: transparent;
+  -webkit-text-stroke: 1px black;
+  transition-property: color;
+  transition-duration: 2s;
 }
+
+.coeuri:hover {
+  display: block;
+  visibility: unset;
+  background: --webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(blue),
+    to(red)
+  );
+}
+
 /**Mise en page résultats de recherche*/
 
 .Card_container {
