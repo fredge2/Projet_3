@@ -19,17 +19,72 @@ body {
 
   100% {
     height: 0px;
+    width: 0px;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    height: 0px;
+    width: 0px;
   }
 }
 
 #overlay {
-  animation: 3s overlay;
+  animation: 3s overlay forwards;
   overflow: hidden;
   z-index: 1000;
   background-color: #ffffff;
   position: fixed;
   top: 0px;
   left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: top;
+}
+
+.boxload {
+  width: 150px;
+  height: 150px;
+  border-top: #9356dc solid;
+  border-left: #32b091 solid;
+  border-bottom: #ff79da;
+  border-right: blue;
+  background-color: orange;
+  animation: spin 300ms linear infinite;
+}
+.boxload1 {
+  width: 150px;
+  height: 150px;
+  border-top: #9356dc solid;
+  border-left: #32b091 solid;
+  border-bottom: blue;
+  border-bottom: red;
+  background-color: yellow;
+  animation: spin 300ms linear infinite;
+}
+.boxload2 {
+  width: 150px;
+  height: 150px;
+  border-top: #9356dc solid;
+  border-left: #32b091 solid;
+  border-bottom: blue;
+  border-bottom: red;
+  background-color: rgb(0, 119, 255);
+  animation: spin 400ms linear infinite;
+}
+
+.boxloa {
+  display: flex;
+}
+
+.habillage {
+  flex-direction: column;
 }
 
 /**essai couleur*
