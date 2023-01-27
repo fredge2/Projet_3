@@ -1,8 +1,135 @@
+/**loader*/
+
 body {
-  margin: 0 auto;
+  padding: 0px;
+  margin: 0px;
   font-family: Roboto;
-  margin: 0 auto;
 }
+
+@keyframes overlay {
+  0% {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  90% {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  100% {
+    height: 0px;
+    width: 0px;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+    height: 0px;
+    width: 0px;
+  }
+}
+
+#overlay {
+  animation: 6s overlay forwards;
+  overflow: hidden;
+  z-index: 1000;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: top;
+  opacity: 0, 8;
+}
+
+.boxload {
+  width: 150px;
+  height: 150px;
+  border-top: #9356dc solid 5px;
+  border-left: #99e2d0 solid 5px;
+  border-bottom: #ff79da solid 5px;
+  border-right: #9356dc solid 5px;
+  background-color: #99e2d0;
+  border-radius: 100%;
+  animation: spin 300ms linear infinite;
+}
+.boxload1 {
+  width: 150px;
+  height: 150px;
+  border-top: #9356dc solid 5px;
+  border-left: #99e2d0 solid 5px;
+  border-bottom: #9356dc solid 5px;
+  border-right: #ff79da solid 5px;
+  background-color: #ff79da;
+  border-radius: 100%;
+  animation: spin 400ms linear infinite;
+}
+
+.boxload2 {
+  width: 150px;
+  height: 150px;
+  border-top: #9356dc solid 5px;
+  border-left: #ff79da solid 5px;
+  border-bottom: #99e2d0 solid 5px;
+  border-right: #ff79da solid 5px;
+  background-color: #9356dc;
+  border-radius: 100%;
+  animation: spin 500ms linear infinite;
+}
+
+.boxloa {
+  display: flex;
+}
+
+.habillage {
+  flex-direction: column;
+}
+
+/**essai couleur*
+  
+  .cercle1 {
+    margin-top: 50px;
+    background-color: #15dea5;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-top: #9356dc 10px solid;
+    border-bottom: #f00f0f 10px solid;
+    border-radius: 50%;
+    animation: spin 1, 5s linear;
+  
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+      height: 0px;
+      width: 0px;
+    }
+  }
+  
+  .cercle2 {
+    border-bottom: #00f0f0 solid 10px;
+    border-top: rgb(255, 47, 175) solid 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    animation: spin 3s linear 5s;/
+  }
+  
+  /**Main*/
 
 .img {
   width: 260px;
@@ -34,7 +161,7 @@ body {
 .intro {
   display: block;
   text-align: center;
-  height: 370px;
+  height: 300px;
   background-color: #f6f6f6;
   align-items: center;
   font-size: 25px;
@@ -44,7 +171,7 @@ body {
 }
 
 .intro h1 {
-  line-height: 1.2;
+  line-height: 1;
 }
 
 .intro p {
@@ -55,7 +182,7 @@ body {
   width: 260px;
   min-height: 60px;
   border-radius: 50px 50px 50px 50px;
-  background-color: #ff79da;
+  background-color: linear-gradient(#ff79da, #9356dc);
   display: flex;
   margin: auto;
   text-align: center;
@@ -72,7 +199,6 @@ body {
 .fonctionnement {
   height: 60px;
   background-color: white;
-  margin: 10px;
 }
 .ftittle {
   font-size: 24px;
@@ -88,7 +214,6 @@ body {
   justify-content: space-evenly;
   margin-top: 20px;
   margin: 20px;
-  padding: 10px;
 }
 
 .wrap {
@@ -103,7 +228,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: start;
-  margin: 5px;
+  margin-bottom: 15px;
+  margin-right: 10px;
 }
 
 .wrap_pastille {
@@ -147,7 +273,6 @@ body {
   background-color: #f6f6f6;
   margin-top: 30px;
   padding-bottom: 60px;
-  width: 100vw;
 }
 
 .Card_container {
@@ -155,7 +280,8 @@ body {
   margin-top: 60px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  text-decoration: none;
 }
 
 .tittle_wrapper {
@@ -165,21 +291,41 @@ body {
 }
 
 .card {
-  height: 280px;
+  height: 270px;
   width: 260px;
   background-color: white;
   font-size: 18px;
   border-radius: 40px 40px 0px 0px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+.card_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "roboto", sans-serif;
+  text-align: center;
+  width: 80px;
+  height: 30px;
+  background-color: #99e2d0;
+  color: #32b091;
+  position: relative;
+  left: 65%;
+  top: -165px;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
 }
 
 .card_texte {
   display: flex;
   text-decoration: none;
-  color: black;
+  padding-left: 10px;
 }
 
 .card_image {
@@ -187,10 +333,39 @@ body {
   object-fit: cover;
 }
 
-.coeur {
-  padding-top: 25px;
-  font-size: 25px;
+.texte {
+  text-decoration: none;
+  width: 80%;
 }
+
+.coeuri {
+  padding-top: 25px;
+  padding-left: 10px;
+  width: 20%;
+  flex: 1.7%;
+}
+
+.coeur {
+  display: flex;
+  color: transparent;
+  background-color: transparent;
+  -webkit-text-stroke: 2px black;
+  transition-property: color;
+  transition-duration: 2s;
+  transform: scale(1);
+  transition: transform 250ms;
+}
+
+.coeur:hover {
+  display: block;
+  visibility: unset;
+  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: transparent;
+  transform: scale(1.2);
+}
+
 /**Mise en page résultats de recherche*/
 
 .Card_container {
@@ -209,7 +384,7 @@ body {
   padding-top: 20px;
   display: flex;
   justify-content: center;
-  flex: wrap;
+  display: flex;
 }
 
 .box {
