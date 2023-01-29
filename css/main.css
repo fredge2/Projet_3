@@ -42,7 +42,7 @@ body {
 }
 
 #overlay {
-  animation: 7s overlay forwards;
+  animation: 4s overlay forwards;
   overflow: hidden;
   z-index: 1000;
   background-color: #ffffff;
@@ -52,6 +52,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100vw;
+  width: 100vw;
 }
 
 .boxload {
@@ -60,7 +62,7 @@ body {
   border: #9356dc solid 10px;
   background-color: #99e2d0;
   border-radius: 100%;
-  animation: spin 700ms linear infinite;
+  animation: spin 600ms linear infinite;
 }
 .boxload1 {
   width: 150px;
@@ -68,7 +70,7 @@ body {
   border: #99e2d0 solid 10px;
   background-color: #ff79da;
   border-radius: 100%;
-  animation: spin 500ms linear infinite;
+  animation: spin 400ms linear infinite;
 }
 
 .boxload2 {
@@ -77,49 +79,55 @@ body {
   border: #ff79da solid 10px;
   background-color: #9356dc;
   border-radius: 100%;
-  animation: spin 600ms linear infinite;
+  animation: spin 500ms linear infinite;
 }
 
 .boxloa {
   display: flex;
+  height: 200px;
+  justify-content: center;
+  margin-top: 70px;
 }
 
 .habillage {
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bonus {
+  position: relative;
+  top: -20px;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
 }
 
 .logoloader {
-  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
   bottom: 40px;
-  left: 50%;
   font-family: Shrikhand;
   background: -webkit-linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: transparent;
+  color: #99e2d0;
+  width: 300px;
+  height: 150px;
+  border-radius: 150px/75px;
   font-size: 50px;
-  animation: text 200ms infinite;
+  animation: text 450ms infinite;
 }
 
 @keyframes text {
   0% {
     background: -webkit-linear-gradient(#ff79da, #99e2d0);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: transparent;
   }
 
   30% {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: transparent;
     background: -webkit-linear-gradient(#99e2d0#9356dc);
   }
 
-  60% {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: transparent;
+  100% {
     background: -webkit-linear-gradient(#9356dc, #ff79da);
   }
 }
@@ -196,17 +204,21 @@ body {
   background-color: #f6f6f6;
   align-items: center;
   font-size: 25px;
-  padding-bottom: 30px;
+  padding-bottom: 110px;
   padding-top: 40px;
   line-height: 70%;
 }
 
+.line {
+  font-size: 20px;
+}
 .intro h1 {
   line-height: 1;
 }
 
 .intro p {
   font-size: 20px;
+  line-height: 1, 1;
 }
 
 .button {
@@ -283,7 +295,7 @@ body {
 }
 
 .wrap:hover {
-  background-color: #ff79da;
+  background: -webkit-linear-gradient(#99e2d0, #ff79da);
 }
 
 .wrap:visited {
@@ -415,16 +427,18 @@ body {
   padding-top: 20px;
   display: flex;
   justify-content: center;
-  display: flex;
+  flex-direction: column;
 }
 
 .box {
-  padding: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px;
 }
 
 .logo_footer {
   font-family: Shrikhand;
   padding-left: 20px;
+  padding-bottom: 15px;
 }
 
 #contact {
