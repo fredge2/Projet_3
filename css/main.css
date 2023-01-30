@@ -42,7 +42,7 @@ body {
 }
 
 #overlay {
-  animation: 4s overlay forwards;
+  animation: 3s overlay forwards;
   overflow: hidden;
   z-index: 1000;
   background-color: #ffffff;
@@ -61,6 +61,7 @@ body {
   height: 150px;
   border: #9356dc solid 10px;
   background-color: #99e2d0;
+  border-top: #ff79da solid 10px;
   border-radius: 100%;
   animation: spin 600ms linear infinite;
 }
@@ -69,6 +70,7 @@ body {
   height: 150px;
   border: #99e2d0 solid 10px;
   background-color: #ff79da;
+  border-right: #9356dc solid 10px;
   border-radius: 100%;
   animation: spin 400ms linear infinite;
 }
@@ -78,6 +80,7 @@ body {
   height: 150px;
   border: #ff79da solid 10px;
   background-color: #9356dc;
+  border-bottom: #99e2d0 solid 10px;
   border-radius: 100%;
   animation: spin 500ms linear infinite;
 }
@@ -115,7 +118,7 @@ body {
   height: 150px;
   border-radius: 150px/75px;
   font-size: 50px;
-  animation: text 450ms infinite;
+  animation: text 550ms infinite;
 }
 
 @keyframes text {
@@ -130,42 +133,6 @@ body {
   100% {
     background: -webkit-linear-gradient(#9356dc, #ff79da);
   }
-}
-/**essai couleur*
-
-.cercle1 {
-  margin-top: 50px;
-  background-color: #15dea5;
-  width: 200px;
-  height: 200px;
-  margin: auto;
-  border-top: #9356dc 10px solid;
-  border-bottom: #f00f0f 10px solid;
-  border-radius: 50%;
-  animation: spin 1, 5s linear;
-
-  animation-fill-mode: forwards;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-    height: 0px;
-    width: 0px;
-  }
-}
-
-.cercle2 {
-  border-bottom: #00f0f0 solid 10px;
-  border-top: rgb(255, 47, 175) solid 10px;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin: auto;
-  animation: spin 3s linear 5s;/
 }
 
 /**Main*/
@@ -193,32 +160,37 @@ body {
   background-color: #e7e9eb;
 }
 
-.location span {
-  margin: 40px;
+.localisation {
+  border: none;
+  background-color: #eaeaea;
+  padding-left: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  width: 170px;
 }
 
 .intro {
   display: block;
   text-align: center;
-  height: 300px;
+  height: 230px;
   background-color: #f6f6f6;
   align-items: center;
   font-size: 25px;
-  padding-bottom: 110px;
+  padding-bottom: 20px;
   padding-top: 40px;
   line-height: 70%;
 }
 
 .line {
-  font-size: 20px;
+  font-size: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 1, 3;
 }
-.intro h1 {
+.titre {
   line-height: 1;
-}
-
-.intro p {
-  font-size: 20px;
-  line-height: 1, 1;
+  font-weight: bold;
 }
 
 .button {
@@ -235,6 +207,12 @@ body {
   margin-top: 25px;
   box-shadow: 0px 8px 10px -5px grey;
 }
+
+.boxbut :hover {
+  opacity: 0.8;
+  box-shadow: 0px 14px 10px -3px gray;
+}
+
 .button span {
   margin: auto;
 }
@@ -242,13 +220,14 @@ body {
 .fonctionnement {
   height: 60px;
   background-color: white;
+  display: flex;
 }
 .ftittle {
   font-size: 24px;
   font-weight: bold;
-  margin: 60px;
+  margin: 35px;
   padding-bottom: 40px;
-  margin-top: 80px;
+  margin-top: 30px;
 }
 
 .wrap_box {
@@ -290,16 +269,20 @@ body {
   padding: 2px;
 }
 
+.symb {
+  color: #9356dc;
+}
+
+.fin {
+  background-color: #f3eefa;
+}
+
 .wrap_pastille span {
   padding-top: 20px;
 }
 
 .wrap:hover {
   background: -webkit-linear-gradient(#99e2d0, #ff79da);
-}
-
-.wrap:visited {
-  background-color: #ff79da;
 }
 
 .wrap_texte {
@@ -328,9 +311,8 @@ body {
 }
 
 .tittle_wrapper {
-  margin: 40px;
-  margin-left: 60px;
-  padding: 40px;
+  margin: 35px;
+  padding-top: 20px;
 }
 
 .card {
@@ -428,6 +410,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 
 .box {
@@ -439,6 +422,7 @@ body {
   font-family: Shrikhand;
   padding-left: 20px;
   padding-bottom: 15px;
+  font-size: 18px;
 }
 
 #contact {
