@@ -1,14 +1,14 @@
 /**CSS restaurants*/
 html,
 body {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
   font-family: Roboto;
 }
 
 .entete {
   display: flex;
-  flex: wrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: white;
@@ -47,7 +47,7 @@ body {
 .coeur:hover {
   display: block;
   visibility: unset;
-  background: -webkit-linear-gradient(#9356dc, #ff79da);
+  background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: transparent;
@@ -61,7 +61,7 @@ body {
   display: flex;
   flex-direction: column;
   border: 1px hidden;
-  border-radius: 38px 38px 0px 0px;
+  border-radius: 38px 38px 0 0;
   margin-top: -150px;
   position: relative;
 }
@@ -83,7 +83,7 @@ body {
 
 .greywrappertittle i {
   padding-left: 50px;
-  padding-top: 0px;
+  padding-top: 0;
   padding-right: 3px;
 }
 .itemmenu {
@@ -103,24 +103,24 @@ body {
   }
 
   50% {
-    opacity: 0, 1;
+    opacity: 0.4;
   }
 
   70% {
-    opacity: 0, 2;
+    opacity: 0.5;
   }
 
   90% {
-    opacity: 0, 25;
+    opacity: 0.6;
   }
 
   95% {
-    opacity: 0, 3;
+    opacity: 0.8;
   }
 
   100% {
     opacity: 1;
-    top: 0px;
+    top: 0;
   }
 }
 
@@ -128,10 +128,10 @@ body {
   background-color: white;
   max-width: 400px;
   width: 100%;
-  margin: 15px 0px;
+  margin: 15px 0;
   z-index: 1;
   position: relative;
-  box-shadow: 0px 8px 10px -5px grey;
+  box-shadow: 0 8px 10px -5px grey;
   border-radius: 20px;
   text-align: start;
   display: flex;
@@ -144,7 +144,7 @@ body {
 }
 
 .wrapper:hover > .wrapper_button {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .wrapper:hover > .wrapper_button > .fa-check {
@@ -181,9 +181,11 @@ body {
   width: 100%;
   padding-left: 15px;
   display: flex;
+  justify-content: space-between;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  line-height: 1.4;
 }
 
 p {
@@ -192,14 +194,17 @@ p {
   overflow: hidden;
 }
 
+.titre {
+  font-size: 18px;
+}
+
 .price {
-  margin-left: auto;
   display: flex;
   align-items: center;
   padding-right: 30px;
   padding-left: 3px;
   position: relative;
-  top: 10px;
+  top: 12.5px;
 }
 
 .wrapper_button {
@@ -229,7 +234,7 @@ p {
   width: 260px;
   min-height: 60px;
   border-radius: 50px 50px 50px 50px;
-  background: -webkit-linear-gradient(#ff79da, #9356dc);
+  background: linear-gradient(#ff79da, #9356dc);
   display: flex;
   margin: auto;
   text-align: center;
@@ -237,13 +242,12 @@ p {
   color: white;
   margin-bottom: 25px;
   margin-top: 25px;
-  box-shadow: 0px 8px 10px -5px grey;
-  font-size: 20px;
+  box-shadow: 0 8px 10px -5px grey;
 }
 
 .boxbut :hover {
   opacity: 0.8;
-  box-shadow: 0px 14px 10px -3px gray;
+  box-shadow: 0 14px 10px -3px gray;
 }
 
 .button span {
@@ -271,6 +275,13 @@ p {
   padding-left: 20px;
   padding-bottom: 15px;
   font-size: 18px;
+}
+
+.espace {
+  padding-left: 7px;
+}
+.espace1 {
+  padding-left: 12px;
 }
 
 #contact {
