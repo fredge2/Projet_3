@@ -127,7 +127,7 @@ body {
   }
 
   30% {
-    background: linear-gradient(#99e2d0#9356dc);
+    background: linear-gradient(#99e2d0, #ff79da);
   }
 
   100% {
@@ -368,7 +368,7 @@ body {
   padding-top: 25px;
   padding-left: 10px;
   width: 20%;
-  flex: 1.7%;
+  flex: 1.7;
 }
 
 .coeur {
@@ -376,20 +376,43 @@ body {
   color: transparent;
   background-color: transparent;
   -webkit-text-stroke: 2px black;
-  transition-property: color;
-  transition-duration: 2s;
-  transform: scale(1);
-  transition: transform 250ms;
 }
 
-.coeur:hover {
-  display: block;
-  visibility: unset;
+.coeur2 {
   background: linear-gradient(#9356dc, #ff79da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: transparent;
-  transform: scale(1.2);
+  -webkit-text-stroke: linear-gradient(#9356dc, #ff79da);
+  opacity: 0;
+  position: relative;
+  top: -21px;
+  transition: opacity 1s;
+}
+
+.coeur3 {
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: linear-gradient(#9356dc, #ff79da);
+  opacity: 0;
+  position: relative;
+  top: 0px;
+  transition: opacity 1.5s;
+  left: -83px;
+}
+
+.itaille {
+  font-size: 25px;
+}
+
+.coeur2:hover {
+  opacity: 1;
+  -webkit-text-stroke: 2px linear-gradient(#9356dc, #ff79da);
+}
+
+.coeur3:hover {
+  opacity: 1;
+  -webkit-text-stroke: 2px linear-gradient(#9356dc, #ff79da);
 }
 
 /**Mise en page résultats de recherche*/
@@ -437,7 +460,7 @@ body {
   text-decoration: none;
   color: white;
 }
-/*# sourceMappingURL=main.css.map */
+/* -- */
 
 .entete {
   display: flex;
@@ -466,24 +489,6 @@ body {
   width: 100%;
   height: 430px;
   object-fit: cover;
-}
-
-.coeur {
-  display: flex;
-  color: transparent;
-  background-color: transparent;
-  -webkit-text-stroke: 2px black;
-  transition-property: color;
-  transition-duration: 2s;
-}
-
-.coeur:hover {
-  display: block;
-  visibility: unset;
-  background: linear-gradient(#9356dc, #ff79da);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: transparent;
 }
 
 .greywrapper {
@@ -573,7 +578,6 @@ body {
   text-overflow: ellipsis;
   overflow: hidden;
   animation: wrapappa 3s;
-  transform: translate(15px) 3s;
 }
 
 .wrapper:hover > .wrapper_button {
